@@ -18,6 +18,7 @@ public class User {
    }
 
    public void setRegistrationDate(int year, int month, int day) {
+      //noinspection deprecation
       this.registrationDate = new Date(year - 1900, month - 1, day);
    }
 
