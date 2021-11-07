@@ -2,73 +2,61 @@ package ClassWork.Task2;
 
 import ClassWork.Task1.UkrainianAddress;
 
-public class Book
-{
-    @Override
-    public String toString()
-    {
-        return "Book{" +
-                "autor=" + autor +
-                ", title=" + title +
-                ", publisher=" + publisher +
-                ", text=" + text +
-                '}';
-    }
+public class Book {
+   Author author;
+   Title title;
+   UkrainianAddress publisher;
+   Text text;
 
-    public Book()
-    {
-    }
+   public Book() {
+   }
 
-    public Book(com.itschool.Classes.Task2.Author autor, com.itschool.Classes.Task2.Title title, UkrainianAddress publisher, Text text)
-    {
-        this.autor = autor;
-        this.title = title;
-        this.publisher = publisher;
-        this.text = text;
-    }
+   public Book(Author author, Title title, UkrainianAddress publisher, Text text) {
+      this.author = author;
+      this.title = title;
+      this.publisher = publisher;
+      this.text = text;
+   }
 
-    public com.itschool.Classes.Task2.Author getAutor()
-    {
-        return autor;
-    }
+   @Override
+   public String toString() {
+      return "Book{" +
+              "author=" + author +
+              ", title=" + title +
+              ", publisher=" + publisher +
+              ", text=" + text +
+              '}';
+   }
 
-    public void setAutor(com.itschool.Classes.Task2.Author autor)
-    {
-        this.autor = autor;
-    }
+   public Author getAuthor() {
+      return author;
+   }
 
-    public com.itschool.Classes.Task2.Title getTitle()
-    {
-        return title;
-    }
+   public void setAuthor(Author autor) {
+      this.author = autor;
+   }
 
-    public void setTitle(com.itschool.Classes.Task2.Title title)
-    {
-        this.title = title;
-    }
+   public Title getTitle() {
+      return title;
+   }
 
-    public UkrainianAddress getPublisher()
-    {
-        return publisher;
-    }
+   public void setTitle(Title title) {
+      this.title = title;
+   }
 
-    public void setPublisher(UkrainianAddress publisher)
-    {
-        this.publisher = publisher;
-    }
+   public UkrainianAddress getPublisher() {
+      return publisher;
+   }
 
-    public Text getText()
-    {
-        return text;
-    }
+   public void setPublisher(UkrainianAddress publisher) {
+      this.publisher = publisher;
+   }
 
-    public void setText(Text text)
-    {
-        this.text = text;
-    }
+   public Text getText() {
+      return text;
+   }
 
-    com.itschool.Classes.Task2.Author autor;
-    com.itschool.Classes.Task2.Title title;
-    UkrainianAddress publisher;
-    Text text;
+   public void setText(Text text) {
+      this.text = text;
+   }
 }

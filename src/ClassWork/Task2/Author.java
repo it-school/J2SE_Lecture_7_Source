@@ -1,46 +1,38 @@
-package com.itschool.Classes.Task2;
+package ClassWork.Task2;
 
-public class Author
-{
-    @Override
-    public String toString()
-    {
-        return "Author{" +
-                "name='" + name + '\'' +
-                ", surname='" + surname + '\'' +
-                '}';
-    }
+public class Author {
+   String name;
+   String surname;
 
-    public Author()
-    {
-    }
+   public Author() {
+   }
 
-    public Author(String name, String surname)
-    {
-        this.name = name;
-        this.surname = surname;
-    }
+   public Author(String name, String surname) {
+      this.name = name;
+      this.surname = surname;
+   }
 
-    public String getName()
-    {
-        return name;
-    }
+   @Override
+   public String toString() {
+      return "Author{" +
+              "name='" + name + '\'' +
+              ", surname='" + surname + '\'' +
+              '}';
+   }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+   public String getName() {
+      return name;
+   }
 
-    public String getSurname()
-    {
-        return surname;
-    }
+   public void setName(String name) {
+      this.name = name;
+   }
 
-    public void setSurname(String surname)
-    {
-        this.surname = surname;
-    }
+   public String getSurname() {
+      return surname;
+   }
 
-    String name;
-    String surname;
+   public void setSurname(String surname) {
+      this.surname = surname;
+   }
 }
